@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página QR</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html" class="nav-link">Inicio</a>
+    </nav>
+
+    <header class="header">
+      <h1 class="header-text">AR</h1>
+    </header>
+
+    <main class="content">
+      <p class="description">
+        Creamos experiencias de Realidad Aumentada (AR) personalizadas para
+        cualquier objeto, permitiendo una interacción única e innovadora.
+        Escanea el código y descubre cómo transformar lo cotidiano en algo
+        extraordinario.
+      </p>
+      <div class="qr-container">
+        <div class="qr-box">
+          <img src="realidadA/QR1.jpg" alt="QR 1" />
+          <p class="qr-text">Escanea para el AR</p>
+        </div>
+        <div class="qr-box">
+          <img src="realidadA/QR2.jpg" alt="QR 2" />
+          <p class="qr-text">Escanea para el AR</p>
+        </div>
+        <div class="qr-box">
+          <img src="realidadA/QR3.jpg" alt="QR 3" />
+          <p class="qr-text">Escanea para el AR</p>
+        </div>
+        <div class="qr-box">
+          <img src="realidadA/QR4.jpg" alt="QR 4" />
+          <p class="qr-text">Escanea para el AR</p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+
+  .navbar {
+    background-color: #333;
+    padding: 2rem;
+    text-align: left;
+  }
+
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+
+  .header {
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .header-text {
+    font-size: 4rem;
+    font-family: "Arial Black", sans-serif;
+    color: #444;
+  }
+
+  .content {
+    text-align: center;
+    padding: 1rem 2rem;
+  }
+
+  .description {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+  }
+
+  .qr-container {
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(200px, 1fr)
+    ); /* Ajustar tamaño mínimo */
+    gap: 20px;
+    padding: 1rem;
+  }
+
+  .qr-box {
+    background-color: white;
+    border: 2px dashed #ccc;
+    padding: 1.5rem; /* Incrementar padding */
+    text-align: center;
+  }
+
+  .qr-box img {
+    width: 100%;
+    height: auto;
+    max-height: 200px; /* Aumentar el tamaño máximo */
+    object-fit: contain;
+  }
+
+  .qr-text {
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    color: #444;
+    font-weight: bold;
+  }
+</style>
